@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button.accordion {
+	background-color: #D8AE47;
+	color: #6a2c39;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+	line-height: 22px;
+}
+
+button.accordion.active, button.accordion:hover {
+	background-color: #ddd;
+}
+
+button.accordion:after {
+	content: '\02795';
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+	line-height: 15px;
+}
+
+button.accordion.active:after {
+	content: "\2796";
+}
+
+div.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+}
+
+div.panel.show {
+	opacity: 1;
+	max-height: 500px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+span {
+	color: blue;
+	font-size: 18px;
+}
+
+a:HOVER {
+	color: red;
+}
+</style>
+</head>
+<body>
+
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+		<button class="accordion">Job 3</button>
+		<div class="panel">
+			<p>
+				<span>Job Details:</span>Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.<br> <span>Notification:</span><a
+					href="#">Click</a><br>
+				<span>Apply Job:</span><a
+					href="#">Click</a>
+			</p>
+
+		</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].onclick = function() {
+				this.classList.toggle("active");
+				this.nextElementSibling.classList.toggle("show");
+			}
+		}
+	</script>
+
+</body>
+
+</html>

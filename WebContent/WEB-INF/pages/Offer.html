@@ -1,0 +1,59 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div style="display: block;">
+<div class="w3-content w3-section" style="max-width:330px;float: left">
+  <img class="mySlides" src="images/203.jpg" style="width:100%">
+  <img class="mySlides" src="images/1.jpg" style="width:100%">
+  <img class="mySlides" src="images/3.jpg" style="width:100%">
+</div>
+<div class="w3-content w3-section" style="max-width:330px;float: right;">
+  <img class="mySlides1" src="images/203.jpg" style="width:100%">
+  <img class="mySlides1" src="images/204.jpg" style="width:100%">
+  <img class="mySlides1" src="images/205.jpg" style="width:100%">
+</div>
+</div>
+<div class="w3-content w3-section" style="max-width:500px;">
+  <img class="" src="images/209.jpg" style="width:100%">
+  
+</div>
+
+
+
+<script>
+var myIndex = 0;
+var myIndex1 = 0;
+carousel();
+carousel2();
+function carousel() {
+    var i,j;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+   
+}
+function carousel2() {
+var y = document.getElementsByClassName("mySlides1");
+for (j = 0; j < y.length; j++) {
+   y[j].style.display = "none";  
+}
+myIndex1++;
+if (myIndex1 > y.length) {myIndex1 = 1}    
+y[myIndex1-1].style.display = "block";  
+setTimeout(carousel2, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+</body>
+</html>
