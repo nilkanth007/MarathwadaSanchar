@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -61,30 +61,7 @@
 		<div class="Add-html">
 			<div class="form-style-1">
 				<div class="form-style-1-heading">Add News</div>
-				<form name="frm" enctype="multipart/form-data"
-					onSubmit="return validateForm()" action="HelloForm" method="post">
-					<label for="field1"><span>News Id <span
-							class="required">*</span></span> <input type="number"
-						class="input-field" name="id" /> </label> <label for="field1"><span>News
-							Title <span class="required">*</span>
-					</span> <input type="text" class="input-field" name="nestitle" /> </label> <label
-						for="field4"><span>News Type</span> <select name="nestype"
-						class="select-field">
-							<option value="">-select-</option>
-							<option value="General Question">General</option>
-							<option value="Advertise">Hingoli</option>
-							<option value="General Question">Sport</option>
-							<option value="Advertise">Advertisement</option>
-							<option value="Partnership">Partnership</option>
-					</select> </label> <label for="field5"><span>Description <span
-							class="required">*</span></span> <textarea name="nesdesc"
-							class="textarea-field"></textarea> </label> <label for="field5"><span>Image
-							<span class="required">*</span>
-					</span> <input type="file" class="input-field" name="nesphoto"
-						value="ImageUpload" /> </label> <label><span>&nbsp;</span> <input
-						type="submit" value="Submit" /> <input type="submit"
-						value="Reset" /></label>
-				</form>
+				<%@include file="addpaper.html"%>
 			</div>
 
 		</div>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.center {
+    text-align: center;
+	background-color:#5946B2;
+	margin-bottom:5px;
+	color:white;
+}
+h2 {
+    font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+
+}
+input[type=text],[type=Date],[type=file] {
+    width: 100%;
+	height:51px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.fcontainer{
+	max-width:660px;
+    margin: auto;
+	background:#5946B2;
+	height:auto;
+	position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: #5946B2;
+
+}
+
+
+
+.leftcontainer{
+
+	float: left;
+    width: 300px;
+    padding: 10px;
+	background-color:#bbc9a5;
+	
+}
+
+.rightcontainer{
+	float: right;
+    width: 300px;
+    padding: 10px;
+	background-color:#bbc9a5;	
+}
+.button {
+    background-color: #9C2542; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	clear:both;
+}
+.button3 {width: 100%;}
+</style>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="fcontainer">
+<div class="center">
+  <h2>Paper Details</h2>
+</div>
+
+<form action:"#" onsubmit="return validateForm()" method="post">
+<div class ="leftcontainer">
+  <label for="fname">Paper Id</label>
+  <input type="text" id="fname" name="Id" required>
+  <label for="lname">Paper Image1</label>
+  <input type="file" id="lname" name="Image1" required>
+  <label for="fname">Paper Image2</label>
+  <input type="file" id="lname" name="Image2" required>
+</div>
+<div class ="rightcontainer">
+  <label for="fname">Paper Date</label>
+  <input type="Date" id="fname" name="Pdate" required>
+  <label for="lname">Paper Image3</label>
+  <input type="file" id="lname" name="Image3"required>
+  <label for="fname">Paper Image4</label>
+  <input type="file" id="lname" name="Image4" required>
+ </div>
+ 
+  <button class="button button3">Submit</button>
+</form>
+
+
+
+</div>
+
+</body>
+
+</html>
