@@ -51,8 +51,8 @@
 								href="https://www.facebook.com/profile.php?id=100010381357014/"
 								class="facebook"></a></li>
 							<li><a href="#" class="feed"></a></li>
-							<div id="google_translate_element"></div>
 						</ul>
+					<div id="google_translate_element"></div>
 					</div>
 
 					<div class="search">

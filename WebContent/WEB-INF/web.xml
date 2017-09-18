@@ -43,7 +43,34 @@
 		<servlet-name>LProcess</servlet-name>
 		<url-pattern>/process</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Paper</servlet-name>
+		<jsp-file>/WEB-INF/admin/paper.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Paper</servlet-name>
+		<url-pattern>/paper</url-pattern>
+	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>Add Advertiesment</servlet-name>
+		<jsp-file>/WEB-INF/admin/addadvImages.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add Advertiesment</servlet-name>
+		<url-pattern>/adverties</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Add Job</servlet-name>
+		<jsp-file>/WEB-INF/admin/addJobDeatails.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add Job</servlet-name>
+		<url-pattern>/jobs</url-pattern>
+	</servlet-mapping>
+	
 
 	<servlet>
 		<servlet-name>LogoutAdmin</servlet-name>
@@ -53,6 +80,11 @@
 		<servlet-name>LogoutAdmin</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
+	
+	
+	
+	
+	
 	<!-- Client Side -->
 	<servlet>
 		<servlet-name>Home</servlet-name>

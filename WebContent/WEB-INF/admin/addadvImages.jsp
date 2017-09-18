@@ -11,13 +11,13 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == null || x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
+	function validateForm() {
+		var x = document.forms["myForm"]["fname"].value;
+		if (x == null || x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+	}
 </script>
 </head>
 <title>Admin Home</title>
@@ -50,39 +50,46 @@ function validateForm() {
   </li>
   <li><a href="logout">LogOut</a></li>
 </ul>
-
 	<%
 		String islogin = (String) session.getAttribute("islogin");
 		if (islogin == null) {
 			request.setAttribute("not login_msg", "Sorry,Please do Login first");
 	%>
 	<jsp:forward page="index.jsp"></jsp:forward>
-	<%}%>
+	<%
+		}
+	%>
 	<div class="Addnews-wrap">
 		<div class="Add-html">
 			<div class="form-style-1">
 				<%--<%@include file="addpaper.html"%> --%>
 				<div class="fcontainer">
 					<div class="center">
-						<h2>Add Paper Details</h2>
+						<h2>Add AdvertiesMent Details</h2>
 					</div>
-					<form action="#" onsubmit="return validateForm()" method="post">
+					<form action="#">
 						<div class="leftcontainer">
-							<label for="fname">Paper Id</label> <input type="text" id="fname"
-								name="Id" required> <label for="lname">Paper
-								Image1</label> <input type="file" id="lname" name="Image1" required>
-							<label for="fname">Paper Image2</label> <input type="file"
-								id="lname" name="Image2" required>
+							<label for="lname">Paper Image1</label> <input type="file"
+								id="lname" name="Image1" required> <label for="fname">Paper
+								Image2</label> <input type="file" id="lname" name="Image2" required>
+							<label for="lname">Paper Image3</label> <input type="file"
+								id="lname" name="Image3" required> <label for="fname">Paper
+								Image4</label> <input type="file" id="lname" name="Image4" required>
+							<label for="lname">Paper Image5</label> <input type="file"
+								id="lname" name="Image5" required>
 						</div>
 						<div class="rightcontainer">
-							<label for="fname">Paper Date</label> <input type="Date"
-								id="fname" name="Pdate" required> <label for="lname">Paper
-								Image3</label> <input type="file" id="lname" name="Image3" required>
-							<label for="fname">Paper Image4</label> <input type="file"
-								id="lname" name="Image4" required>
+							<label for="fname">Paper Image6</label> <input type="file"
+								id="lname" name="Image6" required> <label for="lname">Paper
+								Image7</label> <input type="file" id="lname" name="Image7" required>
+							<label for="fname">Paper Image8</label> <input type="file"
+								id="lname" name="Image8" required> <label for="lname">Paper
+								Image9</label> <input type="file" id="lname" name="Image9" required>
+							<label for="fname">Paper Image10</label> <input type="file"
+								id="lname" name="Image10" required>
 						</div>
 						<button class="button button3">Submit</button>
-					</form>
+						</form>
 				</div>
 			</div>
 		</div>
