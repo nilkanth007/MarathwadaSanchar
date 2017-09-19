@@ -97,12 +97,12 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>History</servlet-name>
-		<jsp-file>/WEB-INF/pages/history.jsp</jsp-file>
+		<servlet-name>TodaysNews</servlet-name>
+		<jsp-file>/WEB-INF/pages/TodaysNews.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>History</servlet-name>
-		<url-pattern>/history</url-pattern>
+		<servlet-name>TodaysNews</servlet-name>
+		<url-pattern>/TodaysNews</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

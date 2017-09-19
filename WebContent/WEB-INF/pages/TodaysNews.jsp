@@ -70,7 +70,6 @@
 							<li><a class="thumb" href="images/105.jpg"></a></li>
 							<li><a class="thumb" href="images/202.jpg"></a></li>
 							<li><a class="thumb" href="images/203.jpg"></a></li>
-
 							<li><a class="thumb" href="images/204.jpg"></a></li>
 							<li><a class="thumb" href="images/205.jpg"></a></li>
 							<li><a class="thumb" href="images/102.jpg"></a></li>
@@ -94,7 +93,8 @@
 		</div>
 		<div class="header2">
 			<h2 class="title">Latest News Paper</h2>
-			<%@include file="PaperPdf.html"%>
+<%-- 			<jsp:include page="WebContent/WEB-INF/pages/PaperPdf.jsp" /> --%>
+			<%@include file = "PaperPdf.jsp" %>
 		</div>
 		<div class="footer_top_area">
 			<div class="copyright_text">

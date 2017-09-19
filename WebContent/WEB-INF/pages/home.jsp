@@ -108,7 +108,7 @@
 					itself took five days, in which the Razakars were defeated and
 					Hyderabad was annexed</p>
 
-				<a href="history"><button class="button"
+				<a href="TodaysNews"><button class="button"
 						style="vertical-align: middle">
 						<span>आजचे वृत्तपत्र</span>
 					</button> </a>
